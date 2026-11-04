@@ -121,6 +121,7 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:USE_INPUT_SYSTEM_POSE_CONTROL
 -define:USE_STICK_CONTROL_THUMBSTICKS
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:OPENVR_XR_API
 -define:UNITY_LEGACY_INPUT_HELPERS
 -define:UNITY_UGUI_UI
@@ -505,6 +506,8 @@
 "Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportMarkerBase.cs"
 "Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportPoint.cs"
 "Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportURPHelper.cs"
+"Assets/SteamVR/OpenVRUnityXRPackage/Editor/OpenVRPackageInstaller.cs"
+"Assets/SteamVR/OpenVRUnityXRPackage/Editor/OpenVRSimpleJSON.cs"
 "Assets/SteamVR/Plugins/openvr_api.cs"
 "Assets/SteamVR/Scripts/SteamVR.cs"
 "Assets/SteamVR/Scripts/SteamVR_Behaviour.cs"
