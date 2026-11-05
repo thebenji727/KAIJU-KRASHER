@@ -13,10 +13,18 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639294327336725254
-    m_Hash: 1116741705
+      ticks: 639294330576764796
+    m_Hash: 2529814773
 m_EmbeddedPackageManifests:
-  m_ManifestsStatus: {}
+  m_ManifestsStatus:
+    C:/Users/beg91/Documents/GitHub/KAIJU-KRASHER/Krash!/Kaiju Krasher/Packages/com.valvesoftware.unity.openvr/package.json:
+      m_FilePath: C:/Users/beg91/Documents/GitHub/KAIJU-KRASHER/Krash!/Kaiju Krasher/Packages/com.valvesoftware.unity.openvr/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 639294306120810211
+      m_Hash: 771287077
 m_LocalPackages:
   m_LocalFileStatus:
   - m_FilePath: C:\Users\beg91\Documents\GitHub\KAIJU-KRASHER\Krash!\Kaiju Krasher\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.2.1.tgz/package.json
@@ -1548,12 +1556,12 @@ m_ResolvedPackages:
   deprecationMessage: 
   fingerprint: 
 - packageId: com.valvesoftware.unity.openvr@file:C:\Users\beg91\Documents\GitHub\KAIJU-KRASHER\Krash!\Kaiju
-    Krasher\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.2.1.tgz
-  testable: 0
+    Krasher\Packages\com.valvesoftware.unity.openvr
+  testable: 1
   isDirectDependency: 1
   version: 1.2.1
-  source: 6
-  resolvedPath: C:\Users\beg91\Documents\GitHub\KAIJU-KRASHER\Krash!\Kaiju Krasher\Library\PackageCache\com.valvesoftware.unity.openvr@970ac47786c4
+  source: 3
+  resolvedPath: C:\Users\beg91\Documents\GitHub\KAIJU-KRASHER\Krash!\Kaiju Krasher\Packages\com.valvesoftware.unity.openvr
   assetPath: Packages/com.valvesoftware.unity.openvr
   name: com.valvesoftware.unity.openvr
   displayName: OpenVR XR Plugin

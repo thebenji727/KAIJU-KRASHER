@@ -358,10 +358,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Library/PackageCache/com.valvesoftware.unity.openvr@970ac47786c4/Editor/OpenVRBuildProcessor.cs"
-"Library/PackageCache/com.valvesoftware.unity.openvr@970ac47786c4/Editor/OpenVRLoaderMetadata.cs"
-"Library/PackageCache/com.valvesoftware.unity.openvr@970ac47786c4/Editor/OpenVRSettingsCopier.cs"
-"Library/PackageCache/com.valvesoftware.unity.openvr@970ac47786c4/Editor/OpenVRSettingsEditor.cs"
+"Packages/com.valvesoftware.unity.openvr/Editor/OpenVRBuildProcessor.cs"
+"Packages/com.valvesoftware.unity.openvr/Editor/OpenVRLoaderMetadata.cs"
+"Packages/com.valvesoftware.unity.openvr/Editor/OpenVRSettingsCopier.cs"
+"Packages/com.valvesoftware.unity.openvr/Editor/OpenVRSettingsEditor.cs"
 -langversion:9.0
 /deterministic
 /optimize+
@@ -375,5 +375,4 @@
 /nowarn:1702
 /utf8output
 /preferreduilang:en-US
--warn:0
 /additionalfile:"Library/Bee/artifacts/1900b0aE.dag/Unity.XR.OpenVR.Editor.UnityAdditionalFile.txt"
