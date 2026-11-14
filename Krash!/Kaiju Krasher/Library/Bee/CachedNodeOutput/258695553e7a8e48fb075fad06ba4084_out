@@ -1,0 +1,2 @@
+Packages\com.valvesoftware.unity.openvr\Editor\OpenVRBuildProcessor.cs(33,36): warning CS0618: 'XRManagerSettings.loaders' is obsolete: ''XRManagerSettings.loaders' property is obsolete. Use 'XRManagerSettings.activeLoaders' instead to get a list of the current loaders.'
+Packages\com.valvesoftware.unity.openvr\Editor\OpenVRSettingsCopier.cs(54,30): warning CS0618: 'XRManagerSettings.loaders' is obsolete: ''XRManagerSettings.loaders' property is obsolete. Use 'XRManagerSettings.activeLoaders' instead to get a list of the current loaders.'
