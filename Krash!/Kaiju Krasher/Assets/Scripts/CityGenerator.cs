@@ -35,13 +35,23 @@ public class CityGenerator : MonoBehaviour
     [Header("Seed")]
     public int seed = 42;
     public bool generateOnStart = true;
+    [Tooltip("If true, a new random seed is chosen every time the app starts so the city looks different each load.")]
+    public bool randomizeSeedOnStart = true;
 
     private Transform cityRoot;
 
     void Start()
     {
         if (generateOnStart)
+        {
+            if (randomizeSeedOnStart)
+            {
+                // Unity's Random is already non-deterministic across app launches,
+                // so this gives a fresh seed every time the player is run.
+                seed = Random.Range(int.MinValue, int.MaxValue);
+            }
             GenerateCity();
+        }
     }
 
     [ContextMenu("Generate City")]
@@ -123,7 +133,7 @@ public class CityGenerator : MonoBehaviour
             Vector3 spawnPos = cellCenter + offset;
             spawnPos.y = propHeightOffset;
 
-            // Overlap check — if anything is already too close, skip this prop
+            // Overlap check â€” if anything is already too close, skip this prop
             if (Physics.CheckSphere(spawnPos, propOverlapCheckRadius))
             {
                 continue;   // Something is already here, discard this prop
