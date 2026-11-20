@@ -6,7 +6,7 @@ public class CityGenerator : MonoBehaviour
     [Header("Prefabs")]
     public List<GameObject> buildingPrefabs = new List<GameObject>();
     public List<GameObject> carPrefabs = new List<GameObject>();
-    public List<GameObject> propPrefabs = new List<GameObject>();   // Fountains, lights, trash, bushes, trees, etc.
+    public List<GameObject> propPrefabs = new List<GameObject>();
 
     [Header("Grid")]
     public int gridWidth = 6;
@@ -29,27 +29,29 @@ public class CityGenerator : MonoBehaviour
     public int minPropsPerCell = 2;
     public int maxPropsPerCell = 5;
     public float propHeightOffset = 0f;
-    public float propSpawnRadius = 12f;          // How far from cell center they can appear
-    public float propOverlapCheckRadius = 1.5f;  // How strict the "don't clip" check is
+    public float propSpawnRadius = 12f;
+    public float propOverlapCheckRadius = 1.5f;
+
+    [Header("Player Spawn")]
+    [Tooltip("World position the player starts at. The city will be centered on this point.")]
+    public Vector3 playerSpawnPoint = Vector3.zero;
+    [Tooltip("Radius around the player that stays clear of buildings.")]
+    public float safeSpawnRadius = 18f;
 
     [Header("Seed")]
     public int seed = 42;
     public bool generateOnStart = true;
-    [Tooltip("If true, a new random seed is chosen every time the app starts so the city looks different each load.")]
     public bool randomizeSeedOnStart = true;
 
     private Transform cityRoot;
+    private List<Vector3> spawnedPropPositions = new List<Vector3>();
 
     void Start()
     {
         if (generateOnStart)
         {
             if (randomizeSeedOnStart)
-            {
-                // Unity's Random is already non-deterministic across app launches,
-                // so this gives a fresh seed every time the player is run.
                 seed = Random.Range(int.MinValue, int.MaxValue);
-            }
             GenerateCity();
         }
     }
@@ -58,6 +60,7 @@ public class CityGenerator : MonoBehaviour
     public void GenerateCity()
     {
         ClearCity();
+        spawnedPropPositions.Clear();
 
         Random.InitState(seed);
         cityRoot = new GameObject("GeneratedCity").transform;
@@ -65,14 +68,24 @@ public class CityGenerator : MonoBehaviour
 
         float step = cellSize + roadWidth;
 
+        // Offset so the center of the grid sits on the player spawn point
+        float offsetX = -(gridWidth - 1) * step * 0.5f;
+        float offsetZ = -(gridDepth - 1) * step * 0.5f;
+
         for (int x = 0; x < gridWidth; x++)
         {
             for (int z = 0; z < gridDepth; z++)
             {
-                Vector3 cellCenter = new Vector3(x * step, 0f, z * step);
+                Vector3 cellCenter = new Vector3(
+                    x * step + offsetX + playerSpawnPoint.x,
+                    playerSpawnPoint.y,
+                    z * step + offsetZ + playerSpawnPoint.z
+                );
 
-                // Building
-                if (buildingPrefabs.Count > 0 && Random.value < buildingChance)
+                // Skip buildings too close to the player
+                bool tooClose = Vector3.Distance(cellCenter, playerSpawnPoint) < safeSpawnRadius;
+
+                if (!tooClose && buildingPrefabs.Count > 0 && Random.value < buildingChance)
                 {
                     GameObject prefab = buildingPrefabs[Random.Range(0, buildingPrefabs.Count)];
                     GameObject building = Instantiate(prefab, cityRoot);
@@ -85,12 +98,12 @@ public class CityGenerator : MonoBehaviour
                     SpawnCarsAroundBuilding(cellCenter);
                 }
 
-                // Props scattered in the cell (and nearby roads)
+                // Props still spawn (including near the player, if you want)
                 SpawnPropsInCell(cellCenter);
             }
         }
 
-        Debug.Log($"City generated with seed {seed}");
+        Debug.Log($"City generated with seed {seed} (centered on {playerSpawnPoint})");
     }
 
     void SpawnCarsAroundBuilding(Vector3 buildingPos)
@@ -108,7 +121,7 @@ public class CityGenerator : MonoBehaviour
             Vector3 offset = new Vector3(Mathf.Cos(angle) * distance, 0f, Mathf.Sin(angle) * distance);
 
             Vector3 spawnPos = buildingPos + offset;
-            spawnPos.y = carHeightOffset;
+            spawnPos.y = buildingPos.y + carHeightOffset;
 
             GameObject carPrefab = carPrefabs[Random.Range(0, carPrefabs.Count)];
             GameObject car = Instantiate(carPrefab, cityRoot);
@@ -122,21 +135,35 @@ public class CityGenerator : MonoBehaviour
         if (propPrefabs.Count == 0) return;
 
         int propCount = Random.Range(minPropsPerCell, maxPropsPerCell + 1);
+        float minPropDistance = propOverlapCheckRadius;   // reuse the existing slider as the min distance
 
         for (int i = 0; i < propCount; i++)
         {
-            // Random position inside the cell + a bit of the surrounding roads
             float angle = Random.Range(0f, 360f) * Mathf.Deg2Rad;
             float distance = Random.Range(0f, propSpawnRadius);
             Vector3 offset = new Vector3(Mathf.Cos(angle) * distance, 0f, Mathf.Sin(angle) * distance);
 
             Vector3 spawnPos = cellCenter + offset;
-            spawnPos.y = propHeightOffset;
+            spawnPos.y = cellCenter.y + propHeightOffset;
 
-            // Overlap check â€” if anything is already too close, skip this prop
-            if (Physics.CheckSphere(spawnPos, propOverlapCheckRadius))
+            // Check distance against every prop already spawned
+            bool tooClose = false;
+            foreach (Vector3 existing in spawnedPropPositions)
             {
-                continue;   // Something is already here, discard this prop
+                if (Vector3.Distance(spawnPos, existing) < minPropDistance)
+                {
+                    tooClose = true;
+                    break;
+                }
+            }
+            if (tooClose) continue;
+
+            // Optional: still do a quick physics check against buildings/ground if you want
+            Vector3 checkPos = spawnPos + Vector3.up * 0.75f;
+            if (Physics.CheckSphere(checkPos, 0.5f, ~0, QueryTriggerInteraction.Ignore))
+            {
+                // Uncomment the next line if you also want to avoid buildings
+                // continue;
             }
 
             GameObject propPrefab = propPrefabs[Random.Range(0, propPrefabs.Count)];
@@ -144,14 +171,8 @@ public class CityGenerator : MonoBehaviour
             prop.transform.position = spawnPos;
             prop.transform.rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
 
-            // Optional: give props a collider so later props also avoid them
-            // (most prefabs already have colliders; this is just a safety net)
-            if (prop.GetComponent<Collider>() == null)
-            {
-                var col = prop.AddComponent<SphereCollider>();
-                col.radius = propOverlapCheckRadius * 0.6f;
-                col.isTrigger = true;
-            }
+            // Remember this prop’s position so later props avoid it
+            spawnedPropPositions.Add(spawnPos);
         }
     }
 
