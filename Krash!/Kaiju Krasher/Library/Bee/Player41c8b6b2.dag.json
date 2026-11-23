@@ -188,7 +188,13 @@
         180,
         181,
         182,
-        183
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -758,6 +764,30 @@
       "DebugActionIndex": 32
     },
     {
+      "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/UnityOpenXR.dll",
+      "DisplayName": "Copying UnityOpenXR.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/windows/x64/UnityOpenXR.dll"
+      ],
+      "Outputs": [
+        "ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/UnityOpenXR.dll"
+      ],
+      "DebugActionIndex": 33
+    },
+    {
+      "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/openxr_loader.dll",
+      "DisplayName": "Copying openxr_loader.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PackageCache/com.unity.xr.openxr@1.14.3/RuntimeLoaders/windows/x64/openxr_loader.dll"
+      ],
+      "Outputs": [
+        "ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/openxr_loader.dll"
+      ],
+      "DebugActionIndex": 34
+    },
+    {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/libonigwrap.dll",
       "DisplayName": "Copying libonigwrap.dll",
       "ActionType": "CopyFiles",
@@ -767,7 +797,19 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/libonigwrap.dll"
       ],
-      "DebugActionIndex": 33
+      "DebugActionIndex": 35
+    },
+    {
+      "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/OculusXRPlugin.dll",
+      "DisplayName": "Copying OculusXRPlugin.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PackageCache/com.unity.xr.oculus@4.5.5/Runtime/x64/OculusXRPlugin.dll"
+      ],
+      "Outputs": [
+        "ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/OculusXRPlugin.dll"
+      ],
+      "DebugActionIndex": 36
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/XRSimulationSubsystem.dll",
@@ -779,7 +821,19 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/XRSimulationSubsystem.dll"
       ],
-      "DebugActionIndex": 34
+      "DebugActionIndex": 37
+    },
+    {
+      "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/OVRPlugin.dll",
+      "DisplayName": "Copying OVRPlugin.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PackageCache/com.unity.xr.oculus@4.5.5/Runtime/x64/OVRPlugin.dll"
+      ],
+      "Outputs": [
+        "ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/OVRPlugin.dll"
+      ],
+      "DebugActionIndex": 38
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/ucrtbased.dll",
@@ -791,7 +845,31 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/ucrtbased.dll"
       ],
-      "DebugActionIndex": 35
+      "DebugActionIndex": 39
+    },
+    {
+      "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/openvr_api.dll",
+      "DisplayName": "Copying openvr_api.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Packages/com.valvesoftware.unity.openvr/Runtime/x64/openvr_api.dll"
+      ],
+      "Outputs": [
+        "ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/openvr_api.dll"
+      ],
+      "DebugActionIndex": 40
+    },
+    {
+      "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/XRSDKOpenVR.dll",
+      "DisplayName": "Copying XRSDKOpenVR.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Packages/com.valvesoftware.unity.openvr/Runtime/x64/XRSDKOpenVR.dll"
+      ],
+      "Outputs": [
+        "ProjectBuild/Kaiju Krasher_Data/Plugins/x86_64/XRSDKOpenVR.dll"
+      ],
+      "DebugActionIndex": 41
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AIModule.dll",
@@ -803,7 +881,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AIModule.dll"
       ],
-      "DebugActionIndex": 36
+      "DebugActionIndex": 42
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ARModule.dll",
@@ -815,7 +893,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ARModule.dll"
       ],
-      "DebugActionIndex": 37
+      "DebugActionIndex": 43
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AccessibilityModule.dll",
@@ -827,7 +905,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AccessibilityModule.dll"
       ],
-      "DebugActionIndex": 38
+      "DebugActionIndex": 44
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -839,7 +917,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AndroidJNIModule.dll"
       ],
-      "DebugActionIndex": 39
+      "DebugActionIndex": 45
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AnimationModule.dll",
@@ -851,7 +929,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AnimationModule.dll"
       ],
-      "DebugActionIndex": 40
+      "DebugActionIndex": 46
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AssetBundleModule.dll",
@@ -863,7 +941,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AssetBundleModule.dll"
       ],
-      "DebugActionIndex": 41
+      "DebugActionIndex": 47
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AudioModule.dll",
@@ -875,7 +953,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.AudioModule.dll"
       ],
-      "DebugActionIndex": 42
+      "DebugActionIndex": 48
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ClothModule.dll",
@@ -887,7 +965,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ClothModule.dll"
       ],
-      "DebugActionIndex": 43
+      "DebugActionIndex": 49
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ClusterInputModule.dll",
@@ -899,7 +977,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ClusterInputModule.dll"
       ],
-      "DebugActionIndex": 44
+      "DebugActionIndex": 50
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ClusterRendererModule.dll",
@@ -911,7 +989,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ClusterRendererModule.dll"
       ],
-      "DebugActionIndex": 45
+      "DebugActionIndex": 51
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ContentLoadModule.dll",
@@ -923,7 +1001,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ContentLoadModule.dll"
       ],
-      "DebugActionIndex": 46
+      "DebugActionIndex": 52
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.CoreModule.dll",
@@ -935,7 +1013,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.CoreModule.dll"
       ],
-      "DebugActionIndex": 47
+      "DebugActionIndex": 53
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.CrashReportingModule.dll",
@@ -947,7 +1025,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.CrashReportingModule.dll"
       ],
-      "DebugActionIndex": 48
+      "DebugActionIndex": 54
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.DSPGraphModule.dll",
@@ -959,7 +1037,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.DSPGraphModule.dll"
       ],
-      "DebugActionIndex": 49
+      "DebugActionIndex": 55
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.DirectorModule.dll",
@@ -971,7 +1049,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.DirectorModule.dll"
       ],
-      "DebugActionIndex": 50
+      "DebugActionIndex": 56
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.GIModule.dll",
@@ -983,7 +1061,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.GIModule.dll"
       ],
-      "DebugActionIndex": 51
+      "DebugActionIndex": 57
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.GameCenterModule.dll",
@@ -995,7 +1073,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.GameCenterModule.dll"
       ],
-      "DebugActionIndex": 52
+      "DebugActionIndex": 58
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.GridModule.dll",
@@ -1007,7 +1085,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.GridModule.dll"
       ],
-      "DebugActionIndex": 53
+      "DebugActionIndex": 59
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.HotReloadModule.dll",
@@ -1019,7 +1097,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.HotReloadModule.dll"
       ],
-      "DebugActionIndex": 54
+      "DebugActionIndex": 60
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.IMGUIModule.dll",
@@ -1031,7 +1109,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.IMGUIModule.dll"
       ],
-      "DebugActionIndex": 55
+      "DebugActionIndex": 61
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ImageConversionModule.dll",
@@ -1043,7 +1121,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ImageConversionModule.dll"
       ],
-      "DebugActionIndex": 56
+      "DebugActionIndex": 62
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.InputLegacyModule.dll",
@@ -1055,7 +1133,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.InputLegacyModule.dll"
       ],
-      "DebugActionIndex": 57
+      "DebugActionIndex": 63
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.InputModule.dll",
@@ -1067,7 +1145,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.InputModule.dll"
       ],
-      "DebugActionIndex": 58
+      "DebugActionIndex": 64
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -1079,7 +1157,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.JSONSerializeModule.dll"
       ],
-      "DebugActionIndex": 59
+      "DebugActionIndex": 65
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.LocalizationModule.dll",
@@ -1091,7 +1169,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.LocalizationModule.dll"
       ],
-      "DebugActionIndex": 60
+      "DebugActionIndex": 66
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.NVIDIAModule.dll",
@@ -1103,7 +1181,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.NVIDIAModule.dll"
       ],
-      "DebugActionIndex": 61
+      "DebugActionIndex": 67
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -1115,7 +1193,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ParticleSystemModule.dll"
       ],
-      "DebugActionIndex": 62
+      "DebugActionIndex": 68
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
@@ -1127,7 +1205,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.PerformanceReportingModule.dll"
       ],
-      "DebugActionIndex": 63
+      "DebugActionIndex": 69
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.Physics2DModule.dll",
@@ -1139,7 +1217,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.Physics2DModule.dll"
       ],
-      "DebugActionIndex": 64
+      "DebugActionIndex": 70
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.PhysicsModule.dll",
@@ -1151,7 +1229,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.PhysicsModule.dll"
       ],
-      "DebugActionIndex": 65
+      "DebugActionIndex": 71
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ProfilerModule.dll",
@@ -1163,7 +1241,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ProfilerModule.dll"
       ],
-      "DebugActionIndex": 66
+      "DebugActionIndex": 72
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.PropertiesModule.dll",
@@ -1175,7 +1253,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.PropertiesModule.dll"
       ],
-      "DebugActionIndex": 67
+      "DebugActionIndex": 73
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
@@ -1187,7 +1265,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
       ],
-      "DebugActionIndex": 68
+      "DebugActionIndex": 74
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
@@ -1199,7 +1277,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.ScreenCaptureModule.dll"
       ],
-      "DebugActionIndex": 69
+      "DebugActionIndex": 75
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -1211,7 +1289,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SharedInternalsModule.dll"
       ],
-      "DebugActionIndex": 70
+      "DebugActionIndex": 76
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SpriteMaskModule.dll",
@@ -1223,7 +1301,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SpriteMaskModule.dll"
       ],
-      "DebugActionIndex": 71
+      "DebugActionIndex": 77
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -1235,7 +1313,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SpriteShapeModule.dll"
       ],
-      "DebugActionIndex": 72
+      "DebugActionIndex": 78
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.StreamingModule.dll",
@@ -1247,7 +1325,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.StreamingModule.dll"
       ],
-      "DebugActionIndex": 73
+      "DebugActionIndex": 79
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SubstanceModule.dll",
@@ -1259,7 +1337,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SubstanceModule.dll"
       ],
-      "DebugActionIndex": 74
+      "DebugActionIndex": 80
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SubsystemsModule.dll",
@@ -1271,7 +1349,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SubsystemsModule.dll"
       ],
-      "DebugActionIndex": 75
+      "DebugActionIndex": 81
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TLSModule.dll",
@@ -1283,7 +1361,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TLSModule.dll"
       ],
-      "DebugActionIndex": 76
+      "DebugActionIndex": 82
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TerrainModule.dll",
@@ -1295,7 +1373,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TerrainModule.dll"
       ],
-      "DebugActionIndex": 77
+      "DebugActionIndex": 83
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
@@ -1307,7 +1385,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TerrainPhysicsModule.dll"
       ],
-      "DebugActionIndex": 78
+      "DebugActionIndex": 84
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -1319,7 +1397,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll"
       ],
-      "DebugActionIndex": 79
+      "DebugActionIndex": 85
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -1331,7 +1409,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll"
       ],
-      "DebugActionIndex": 80
+      "DebugActionIndex": 86
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TextRenderingModule.dll",
@@ -1343,7 +1421,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TextRenderingModule.dll"
       ],
-      "DebugActionIndex": 81
+      "DebugActionIndex": 87
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TilemapModule.dll",
@@ -1355,7 +1433,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.TilemapModule.dll"
       ],
-      "DebugActionIndex": 82
+      "DebugActionIndex": 88
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UIElementsModule.dll",
@@ -1367,7 +1445,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UIElementsModule.dll"
       ],
-      "DebugActionIndex": 83
+      "DebugActionIndex": 89
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UIModule.dll",
@@ -1379,7 +1457,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UIModule.dll"
       ],
-      "DebugActionIndex": 84
+      "DebugActionIndex": 90
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UmbraModule.dll",
@@ -1391,7 +1469,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UmbraModule.dll"
       ],
-      "DebugActionIndex": 85
+      "DebugActionIndex": 91
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
@@ -1403,7 +1481,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll"
       ],
-      "DebugActionIndex": 86
+      "DebugActionIndex": 92
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -1415,7 +1493,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityAnalyticsModule.dll"
       ],
-      "DebugActionIndex": 87
+      "DebugActionIndex": 93
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityConnectModule.dll",
@@ -1427,7 +1505,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityConnectModule.dll"
       ],
-      "DebugActionIndex": 88
+      "DebugActionIndex": 94
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityCurlModule.dll",
@@ -1439,7 +1517,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityCurlModule.dll"
       ],
-      "DebugActionIndex": 89
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
@@ -1451,7 +1529,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityTestProtocolModule.dll"
       ],
-      "DebugActionIndex": 90
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
@@ -1463,7 +1541,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
       ],
-      "DebugActionIndex": 91
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
@@ -1475,7 +1553,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
       ],
-      "DebugActionIndex": 92
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -1487,7 +1565,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestModule.dll"
       ],
-      "DebugActionIndex": 93
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
@@ -1499,7 +1577,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
       ],
-      "DebugActionIndex": 94
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
@@ -1511,7 +1589,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
       ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VFXModule.dll",
@@ -1523,7 +1601,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VFXModule.dll"
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VRModule.dll",
@@ -1535,7 +1613,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VRModule.dll"
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VehiclesModule.dll",
@@ -1547,7 +1625,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VehiclesModule.dll"
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VideoModule.dll",
@@ -1559,7 +1637,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VideoModule.dll"
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
@@ -1571,7 +1649,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.VirtualTexturingModule.dll"
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.WindModule.dll",
@@ -1583,7 +1661,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.WindModule.dll"
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.XRModule.dll",
@@ -1595,7 +1673,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.XRModule.dll"
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.dll",
@@ -1607,7 +1685,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Assembly-CSharp.dll",
@@ -1619,7 +1697,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Assembly-CSharp.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.Management.dll",
@@ -1631,7 +1709,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.Management.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.Postprocessing.Runtime.dll",
@@ -1643,7 +1721,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.Postprocessing.Runtime.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/SteamVR.dll",
@@ -1655,7 +1733,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/SteamVR.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.ConformanceAutomation.dll",
@@ -1667,7 +1745,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.ConformanceAutomation.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.VisualScripting.Flow.dll",
@@ -1679,7 +1757,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.VisualScripting.Flow.dll"
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.MockRuntime.dll",
@@ -1691,7 +1769,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.MockRuntime.dll"
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.CoreUtils.dll",
@@ -1703,7 +1781,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.CoreUtils.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.Simulation.dll",
@@ -1715,7 +1793,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.Simulation.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.dll",
@@ -1727,7 +1805,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.ARSubsystems.dll",
@@ -1739,7 +1817,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.ARSubsystems.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.MetaQuestSupport.dll",
@@ -1751,7 +1829,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.MetaQuestSupport.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.ARFoundation.VisualScripting.dll",
@@ -1763,7 +1841,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.ARFoundation.VisualScripting.dll"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenVR.dll",
@@ -1775,7 +1853,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenVR.dll"
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.TextMeshPro.dll",
@@ -1787,7 +1865,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.TextMeshPro.dll"
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.OculusQuestSupport.dll",
@@ -1799,7 +1877,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.OculusQuestSupport.dll"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.Interaction.Toolkit.dll",
@@ -1811,7 +1889,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.Interaction.Toolkit.dll"
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.RuntimeDebugger.dll",
@@ -1823,7 +1901,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.OpenXR.Features.RuntimeDebugger.dll"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.ARFoundation.dll",
@@ -1835,7 +1913,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.ARFoundation.dll"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll",
@@ -1847,7 +1925,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -1859,7 +1937,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.VisualScripting.Core.dll"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SpatialTracking.dll",
@@ -1871,7 +1949,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.SpatialTracking.dll"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UI.dll",
@@ -1883,7 +1961,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/UnityEngine.UI.dll"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.Timeline.dll",
@@ -1895,7 +1973,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.Timeline.dll"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.InputSystem.dll",
@@ -1907,7 +1985,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.InputSystem.dll"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.InputSystem.ForUI.dll",
@@ -1919,7 +1997,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.InputSystem.ForUI.dll"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.Oculus.dll",
@@ -1931,7 +2009,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.Oculus.dll"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.ARFoundation.InternalUtils.dll",
@@ -1943,7 +2021,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.XR.ARFoundation.InternalUtils.dll"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.Mathematics.dll",
@@ -1955,7 +2033,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.Mathematics.dll"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.VisualScripting.State.dll",
@@ -1967,7 +2045,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.VisualScripting.State.dll"
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -1979,7 +2057,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Valve.Newtonsoft.Json.dll",
@@ -1991,7 +2069,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Valve.Newtonsoft.Json.dll"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/netstandard.dll",
@@ -2003,7 +2081,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/Mono.Security.dll",
@@ -2015,7 +2093,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.ComponentModel.Composition.dll",
@@ -2027,7 +2105,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Configuration.dll",
@@ -2039,7 +2117,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Core.dll",
@@ -2051,7 +2129,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -2063,7 +2141,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Data.dll",
@@ -2075,7 +2153,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Drawing.dll",
@@ -2087,7 +2165,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.EnterpriseServices.dll",
@@ -2099,7 +2177,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -2111,7 +2189,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 145
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.IO.Compression.dll",
@@ -2123,7 +2201,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Net.Http.dll",
@@ -2135,7 +2213,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Numerics.dll",
@@ -2147,7 +2225,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Runtime.Serialization.dll",
@@ -2159,7 +2237,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 149
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Security.dll",
@@ -2171,7 +2249,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.ServiceModel.Internals.dll",
@@ -2183,7 +2261,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 151
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Transactions.dll",
@@ -2195,7 +2273,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Xml.Linq.dll",
@@ -2207,7 +2285,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.Xml.dll",
@@ -2219,7 +2297,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/System.dll",
@@ -2231,7 +2309,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 155
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Managed/mscorlib.dll",
@@ -2243,7 +2321,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 156
+      "DebugActionIndex": 162
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
@@ -2256,7 +2334,7 @@
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 163
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/app.info",
@@ -2269,9 +2347,9 @@
         "ProjectBuild/Kaiju Krasher_Data/app.info"
       ],
       "ToBuildDependencies": [
-        157
+        163
       ],
-      "DebugActionIndex": 158
+      "DebugActionIndex": 164
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher_Data/Resources/unity default resources",
@@ -2283,7 +2361,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 159
+      "DebugActionIndex": 165
     },
     {
       "Annotation": "CopyFiles ProjectBuild/Kaiju Krasher.exe",
@@ -2295,7 +2373,7 @@
       "Outputs": [
         "ProjectBuild/Kaiju Krasher.exe"
       ],
-      "DebugActionIndex": 160
+      "DebugActionIndex": 166
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -2307,7 +2385,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 161
+      "DebugActionIndex": 167
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -2319,7 +2397,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 162
+      "DebugActionIndex": 168
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -2331,7 +2409,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 163
+      "DebugActionIndex": 169
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -2343,7 +2421,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 164
+      "DebugActionIndex": 170
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -2355,7 +2433,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 165
+      "DebugActionIndex": 171
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -2367,7 +2445,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 166
+      "DebugActionIndex": 172
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -2379,7 +2457,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 167
+      "DebugActionIndex": 173
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -2391,7 +2469,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 168
+      "DebugActionIndex": 174
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -2403,7 +2481,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 169
+      "DebugActionIndex": 175
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -2415,7 +2493,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 170
+      "DebugActionIndex": 176
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -2427,7 +2505,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 171
+      "DebugActionIndex": 177
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -2439,7 +2517,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 172
+      "DebugActionIndex": 178
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -2451,7 +2529,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 173
+      "DebugActionIndex": 179
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -2463,7 +2541,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 174
+      "DebugActionIndex": 180
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -2475,7 +2553,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 175
+      "DebugActionIndex": 181
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -2487,7 +2565,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 176
+      "DebugActionIndex": 182
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -2499,7 +2577,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 177
+      "DebugActionIndex": 183
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -2511,7 +2589,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 178
+      "DebugActionIndex": 184
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/config",
@@ -2523,7 +2601,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 179
+      "DebugActionIndex": 185
     },
     {
       "Annotation": "CopyFiles ProjectBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -2535,7 +2613,7 @@
       "Outputs": [
         "ProjectBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 180
+      "DebugActionIndex": 186
     },
     {
       "Annotation": "CopyFiles ProjectBuild/UnityCrashHandler64.exe",
@@ -2547,7 +2625,7 @@
       "Outputs": [
         "ProjectBuild/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 181
+      "DebugActionIndex": 187
     },
     {
       "Annotation": "CopyFiles ProjectBuild/UnityPlayer.dll",
@@ -2559,7 +2637,7 @@
       "Outputs": [
         "ProjectBuild/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 182
+      "DebugActionIndex": 188
     },
     {
       "Annotation": "Player",
@@ -2721,12 +2799,12 @@
         154,
         155,
         156,
+        157,
         158,
         159,
         160,
         161,
         162,
-        163,
         164,
         165,
         166,
@@ -2745,10 +2823,16 @@
         179,
         180,
         181,
-        182
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 183
+      "DebugActionIndex": 189
     }
   ],
   "FileSignatures": [
@@ -2887,7 +2971,25 @@
       "File": "Library/PackageCache/com.unity.xr.arfoundation@5.2.2/Runtime/Simulation/Plugins/windows/XRSimulationSubsystem.dll"
     },
     {
+      "File": "Library/PackageCache/com.unity.xr.oculus@4.5.5/Runtime/x64/OculusXRPlugin.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.xr.oculus@4.5.5/Runtime/x64/OVRPlugin.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.xr.openxr@1.14.3/Runtime/windows/x64/UnityOpenXR.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.xr.openxr@1.14.3/RuntimeLoaders/windows/x64/openxr_loader.dll"
+    },
+    {
+      "File": "Packages/com.valvesoftware.unity.openvr/Runtime/x64/openvr_api.dll"
+    },
+    {
       "File": "Packages/com.valvesoftware.unity.openvr/Runtime/x64/ucrtbased.dll"
+    },
+    {
+      "File": "Packages/com.valvesoftware.unity.openvr/Runtime/x64/XRSDKOpenVR.dll"
     },
     {
       "File": "ProjectBuild/GameAssembly.dll"
@@ -2959,7 +3061,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 183
+          "Player": 189
         }
 ,  "DefaultNodes": [
     0

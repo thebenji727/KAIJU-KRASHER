@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 297514940}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2728,12 +2728,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGrowth: 0
-  growthPerStage: 100
+  growthPerStage: 120
   currentStage: 0
-  maxStage: 3
-  scaleTarget: {fileID: 0}
+  maxStage: 5
+  scaleTarget: {fileID: 1751986501}
   baseScale: 1
-  scalePerStage: 1.8
+  scalePerStage: 2.5
   invertScale: 0
   onStageUp:
     m_PersistentCalls:
@@ -3180,6 +3180,8 @@ GameObject:
   - component: {fileID: 1751986504}
   - component: {fileID: 1751986503}
   - component: {fileID: 1751986502}
+  - component: {fileID: 1751986505}
+  - component: {fileID: 1751986506}
   m_Layer: 0
   m_Name: PlayerRig
   m_TagString: Untagged
@@ -3194,7 +3196,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751986498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 017c5e3933235514c9520e1dace2a4b2, type: 3}
   m_Name: 
@@ -3261,7 +3263,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &1751986503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3269,7 +3271,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751986498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6fa38d8b5b6eda4bb4ec034e0420f99, type: 3}
   m_Name: 
@@ -3290,13 +3292,63 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751986498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XROrigin: {fileID: 0}
+--- !u!114 &1751986505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751986498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b05e3018c325c49ba22a4c456867dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveRoot: {fileID: 1751986501}
+  lookCamera: {fileID: 1379240479}
+  characterController: {fileID: 1751986502}
+  moveSpeed: 4
+  sprintMultiplier: 2
+  mouseSensitivity: 2
+  invertY: 0
+  toggleKey: 282
+  startEnabled: 1
+  onlyWhenNoXR: 1
+--- !u!114 &1751986506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751986498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2d5a8115f94204399c8bf33bb57806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kaijuGrowth: {fileID: 1222468201}
+  characterController: {fileID: 1751986502}
+  propGrowth: 50
+  carGrowth: 100
+  buildingGrowth: 300
+  baseDetectionRadius: 1.2
+  radiusPerStage: 0.8
+  radiusPadding: 0.3
+  consumableLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  ignoreTags:
+  - Ground
+  - Player
+  destroyOnContact: 1
+  minTimeBetweenHits: 0.1
 --- !u!1 &1790818676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5781593798904203336, guid: 5317394648af5b94eaea206e07e79629, type: 3}
